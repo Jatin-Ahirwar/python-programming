@@ -148,3 +148,56 @@ elif(hours >=18 and hours <=17):
     print("good evening ji")
 else:
     print("good night ji")
+
+# using match statement 
+
+x = int(input("enter the value : "))
+
+match x:
+    case 0:
+        print("the value of x is ",x)
+    case 10:
+        print("the value is greater than 0 and less then 11")    
+    case _ if x<90:
+        print("the value is of x is less then 90" , x)    
+    case _ if x>90:
+        print("the value is of x is greater then 90" , x)    
+
+for k in range (1,12,3):
+    print(k)
+
+
+for i in range(1,101):
+    print(i)
+
+# while loop 
+
+i = int(input("enter the value :"))
+while(i<100):
+    print(i)
+else:
+    print("value is greater than 100")
+
+# Break is used for breaking the loop and terminate the process 
+
+for i in range(1,12):
+    if(i==10):
+        break
+    print("5 X" , i , "=" , 5*i)
+print("component breaked")
+
+# continue is used for stop the iteration according to the condition and execute the remaining code 
+
+for i in range(1,12):
+    if(i==10):
+        continue
+    print("5 X" , i , "=" , 5*i)
+
+# do while loop
+
+i = 0
+while True:
+    print(i)
+    i = i + 1
+    if(i%100 == 0):
+        break
